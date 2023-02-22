@@ -12,7 +12,7 @@ const Quantity = ({
     }
 
     return (
-        <div>Quantity: <input type='number' value={value} min={0} onChange={handleChange} /></div>
+        <div><label>Quantity:</label> <input type='number' value={value} min={0} onChange={handleChange} /></div>
     )
 }
 

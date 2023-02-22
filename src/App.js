@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Quantity from './components/Quantity/Quantity';
 import { useState } from 'react';
+import Logo from './components/Logo/Logo';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       {console.log(state)}
       <Quantity onChange={handleQuantity} />
       <Quantity onChange={handleQuantity} />
+      <Logo/>
 
     </div>
   );
