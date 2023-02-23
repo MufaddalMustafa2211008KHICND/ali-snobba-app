@@ -1,0 +1,28 @@
+.main {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    border: 2px solid black;
+}
+
+.name {
+    font-size: 30px
+}
+
+.description {
+    margin: 20px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.btnContainer {
+    margin: 20px;
+}
+
+.quantity {
+    margin: 20px;
+}

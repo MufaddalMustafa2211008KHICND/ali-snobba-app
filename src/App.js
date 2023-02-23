@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-import Quantity from './components/Quantity/Quantity';
-import { useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Products from './pages/Products/Products';
+import ProductDetails from './pages/ProductDetails/ProductDetails';
+import Cart from './pages/Cart/Cart';
+import Checkout from './pages/Checkout/Checkout';
 import Logo from './components/Logo/Logo';
 
 function App() {
 
-  const [state, setState] = useState();
-
-  const handleQuantity = (value) => {
-    setState(value)
-  }
-
   return (
-    <div className="App">
-      {console.log(state)}
-      <Quantity onChange={handleQuantity} />
-      <Quantity onChange={handleQuantity} />
-      <Logo/>
-
+    <>
+    <div style={{textAlign: 'center'}}>
+        <Logo/>
     </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Products/>} />
+        <Route path='/product/:productId' element={<ProductDetails/>} />
+        <Route path='/shopping-cart' element={<Cart/>} />
+        <Route path='/checkout' element={<Checkout/>} />
+      </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 

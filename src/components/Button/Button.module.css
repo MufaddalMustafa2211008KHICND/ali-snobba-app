@@ -1,7 +1,26 @@
 .primary {
-
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .danger {
-    
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.button {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgb(238, 238, 238);
+    border: 2px solid grey;
 }

@@ -1,0 +1,47 @@
+.card {
+    border: 2px solid;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 500px;
+    position: relative;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.leftSide {
+    display: flex;
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.name {
+    font-weight: bold;
+    margin: 10px;
+}
+
+.description {
+    margin: 10px;
+}
+
+.price {
+    margin: 10px;
+}
+
+.addToCart {
+    margin: 10px;
+}

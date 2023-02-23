@@ -1,13 +1,22 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './Button.module.css'
 
 const Button = ({
-    type,
+    type='primary',
     onClick,
-    children
+    children,
+    className,
+    disabled=false,
+    href
 }) => {
+
+  if(href) {
+    return <a className={styles.button} href={href}>{children}</a>
+  }
+
   return (
-    <button className={styles['primary']} onClick={onClick} >{children}</button>
+    <button disabled={disabled} className={`${styles[type]} ${className} ${disabled && styles.disabled}`} onClick={onClick} >{children}</button>
   )
 }
 
